@@ -1,0 +1,6 @@
+Project Proposal
+
+    My intentions for this project are to create a socialmedia blog site. 
+The site will allow users to create an account and create posts as well as edit and delete post made by them.
+Users will also be able to view the profiles of other user being able to friend other users and posts they have made depending on privacy settings.
+Posts will be be able to consist of both text and images. Users will have a feed which will show the posts of the users friends.

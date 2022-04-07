@@ -5,7 +5,6 @@ body{
 
 h1{
     text-align: center;
-    margin: auto;
     padding: 30px;
     background-color: mediumseagreen;
     color: white;
@@ -16,24 +15,31 @@ ul{
     list-style-type: none;
     margin: auto;
     padding: 0;
+    
 }
 li{
+    text-align: center;
     padding: 15px;
     
 }
 
 li a {
+    
     display: block;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 nav{
+    text-align: center;
+    margin: auto;
     font-size: larger;
     box-shadow: 15px 10px 10px lightgray;
 }
-.jumbotron
+a:link, a:visited
 {
-    background-color: white;
+    padding: 15px;
+    color: mediumseagreen;
 }
+
+
+  

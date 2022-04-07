@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    background-color: mediumseagreen;
+    color: white;
+    box-shadow: 15px 10px 10px lightgray;
+}
+
+ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+li{
+    padding: 15px;
+    
+}
+
+li a {
+    display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav{
+    font-size: larger;
+    box-shadow: 15px 10px 10px lightgray;
+}
+.jumbotron
+{
+    background-color: white;
+}

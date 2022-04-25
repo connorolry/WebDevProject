@@ -1,3 +1,13 @@
+const nav = document.querySelector('nav')
+    if(getCurrentUser()){
+        nav.innerHTML = ``
+    }
+    else{
+        nav.innerHTML = ``
+        ``
+    }
+
+
 let id = 1
 class User{
     constructor(userName, password, email, firstName, lastName){
@@ -57,6 +67,7 @@ class User{
     }
 }
 
+
 let form = document.getElementById("form")
 form.addEventListener('submit', createUser())
 
@@ -70,6 +81,8 @@ function createUser(e)
     let pswd = document.getElementById("pswd").value
 
     const user = new User( "name",pswd, email, firstName, lastName)
+    var json = JSON.stringify(user)
+    localStorage.setItem(json)
     console.log(user)
 
 }

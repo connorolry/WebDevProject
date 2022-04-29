@@ -1,11 +1,3 @@
-const nav = document.querySelector('nav')
-    if(getCurrentUser()){
-        nav.innerHTML = ``
-    }
-    else{
-        nav.innerHTML = ``
-        ``
-    }
 
 
 let id = 1

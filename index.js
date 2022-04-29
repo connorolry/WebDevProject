@@ -3,7 +3,6 @@ const app = express();
 const userRoutes = require('./server/routes/user.js')
 const postRoutes = require('./server/routes/posts.js')
 const path = require('path')
-
 //CORS middleware
 
 
@@ -18,10 +17,7 @@ app.use(function(req, res, next) {
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes)
 
-app.get('*', function (req, res) {
- res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 const PORT = process.env.PORT || 3000;

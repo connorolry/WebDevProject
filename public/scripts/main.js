@@ -91,3 +91,4 @@ export function logout() {
   removeCurrentUser();
   window.location.href = "login.html";
 }
+

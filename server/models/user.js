@@ -59,7 +59,7 @@ const con = require('./db_connect')
 
   async function userExists(username) {
     const sql = `SELECT * FROM users
-      WHERE username = "${username}"
+      WHERE userName = "${username}"
     `;
     return await con.query(sql);
   }

@@ -17,17 +17,13 @@ const con = require('./db_connect')
     return await con.query(sql);
   };
 
-  async function getUser(user) {
+  async function getUser(userName) {
     let sql;
-    if(user.userId) {
+    if(userName) {
       sql = `SELECT * FROM users
-        WHERE user_id = ${user.userId}
+        WHERE userName = ${userName}
       `;
-    } else {
-      sql = `SELECT * FROM users
-        WHERE username = "${user.userName}"
-      `;
-    }
+    } 
   
     return await con.query(sql);
   }
@@ -41,16 +37,16 @@ const con = require('./db_connect')
     return user[0];
    }
 
-   async function register(user) {
-    const u = userExists(user.userName);
+   async function register(userName, password) {
+    const u = userExists(userName);
     if(u.length>0) throw Error("Username already exists");
   
     const sql = `INSERT INTO users (userName, password)
-      VALUES ("${user.username}", "${user.password}")
+      VALUES ("${userName}", "${password}")
     `;
   
     const insert =  con.query(sql);
-    const newUser = await getUser(user);
+    const newUser = await getUser(userName);
     return newUser[0];
   }
   

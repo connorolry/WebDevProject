@@ -19,7 +19,6 @@ function login(e) {
   })
   .catch((error) => {
     const errText = error.message;
-    document.querySelector("#login-form p.error").innerHTML = errText;
     document.getElementById("pswd").value = "";
     console.log(`Error! ${errText}`)
   });

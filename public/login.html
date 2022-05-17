@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
+    <header>
+    <h1 class="mb-3">Home page</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    </nav>
+    </header>
 <body>
     <div>
-    <form action="login">
+    <form action="login-form">
         <h2>Login</h2>
-        <label for="email">Email</label><br>
-        <input type="text" name="email" id="email"><br>
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username"><br>
         <label for="pswd">Password</label><br>
         <input type="password" name="pswd" id="pswd"><br>
         <input type="submit" value="Login">
     </form>
     </div>
 </body>
+<script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/user-script.js"></script>
 </html>

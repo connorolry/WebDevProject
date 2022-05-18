@@ -5,7 +5,7 @@
 3. Frontend: CSS, Bootstrap, Fontawesome 
    Backend: javascript, express, Mysql, Node
 
-4. ![](public/images/E-R diagram.pdf)
+4. ![](public/images/E-Rdiagram.pdf)
 
 5. First download node and node package manager. After downloading the project in the root of the project run the npm install command. To start the express server use the command npm run dev, the server will start on local host 3000.
 
